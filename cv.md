@@ -18,12 +18,31 @@ I know that my ability to learn and acquire new skills will help me become a goo
 
 
 
+## Skills
+* Markdown
+* HTML5
+* CSS3
+* JavaScript Basics
+* Git
+* GitHub
+* Java Core
+* Thymeleaf
+* Spring MVC
+* Hibernate
+* MySQL
+
+
+
 ## Projects
 * ***java:*** 
     + [Teacher's journal](https://tutorappkurilsk.herokuapp.com/)
 * ***js:***
     + [Portfolio](https://rolling-scopes-school.github.io/fox1206-JSFEPRESCHOOL/portfolio/)
     + [Gallery](https://fox1206.github.io/gallery-image/gallery/)
+
+
+
+
 
 
 
