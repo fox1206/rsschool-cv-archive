@@ -10,6 +10,14 @@
 
 
 
+## About me
+I recently left the banking industry and now I spend all my free time studying Frontend development.
+I'm interested in web development because I see career opportunities. There are many quality free resources for self-education and a large community of developers.
+
+I know that my ability to learn and acquire new skills will help me become a good Frontend Developer.
+
+
+
 ## Projects
 * ***java:*** 
     + [Teacher's journal](https://tutorappkurilsk.herokuapp.com/)
