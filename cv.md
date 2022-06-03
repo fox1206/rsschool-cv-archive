@@ -67,3 +67,6 @@ let number = Math.sqrt(num);
 
 
 
+## Languages:
+* Russian - Native
+* English - A1 (A2 - in progress)
