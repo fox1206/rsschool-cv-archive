@@ -18,3 +18,13 @@ body {
   margin: 0 auto;
   background-color: #a4a4a4;
 }
+
+.cv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--while);
+}
