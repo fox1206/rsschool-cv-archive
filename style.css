@@ -13,3 +13,8 @@
   --fonts1: 'Bebas Neue', cursive;
   --fonts2: 'Dosis', sans-serif;
 }
+
+body {
+  margin: 0 auto;
+  background-color: #a4a4a4;
+}
