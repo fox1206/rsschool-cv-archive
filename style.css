@@ -93,6 +93,11 @@ body {
   border-radius: 50%;  
 }
 
+.info_name {
+  position: relative;
+  z-index: 60;
+}
+
 .div_title {
   font-family: var(--fonts1);
   line-height: 25px;
@@ -240,6 +245,13 @@ body {
 
 .projects_j {
   padding-bottom: 25px;
+}
+
+.english,
+.education p,
+.contacts {
+  position: relative;
+  z-index: 60;
 }
 
 /* footer */
