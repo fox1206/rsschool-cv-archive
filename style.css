@@ -88,8 +88,8 @@ body {
   z-index: 5;
   max-width: 340px;
   max-height: 340px;
-  min-width: 340px;
-  min-height: 340px;
+  min-width: 290px;
+  min-height: 290px;
   border-radius: 50%;  
 }
 
@@ -342,14 +342,105 @@ body {
   background-image: url('./assets/png/7.png');
 }
 
+/* media */
+@media (max-width: 820px){
+  .title_two,
+  .inform,
+  .section_contacts,
+  .section_skills,
+  .courses_list,
+  .projects_list,
+  .education p,
+  .english p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+  
+  @media (max-width: 780px) {
+    .nav {
+      display: none;
+    }
+  
+    .div_title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .title_level_two {
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 631px) {
+    .rsschool_footer img {
+      width: 140px;
+    }
+  
+    .github_footer img {
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .github_footer a,
+    .rsschool_footer a
+    {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 551px) { 
+    .title_level_one {
+      font-size: 55px;
+    }
+  
+    .title_level_two {
+      font-size: 25px;
+    }
+  }
+  
+  @media (max-width: 451px) {  
+    .title_level_one {
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 400px) {  
+    .blue_circle {
+      left: 250px;
+    }
 
+  .title_two,
+  .inform,
+  .section_contacts,
+  .section_skills,
+  .courses_list,
+  .projects_list,
+  .education p,
+  .english p {
+    padding-left: 30px;
+    padding-right: 40px;
+  }
 
+  .code {
+    display: none;
+  }
 
+  .grid {
+    grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) );
+  }
 
+  .blue_circle {
+    width: 70px;
+    height: 70px;
+    left: 240px;
+  }
 
-
-
-
-
-
-
+  .github_footer,
+  .rsschool_footer {
+    left: -50px;
+    }
+  }
