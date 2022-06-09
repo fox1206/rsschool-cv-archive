@@ -109,6 +109,134 @@ body {
   color: var(--pink);
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.title_two {
+  font-family: var(--fonts1);
+  color: var(--pink);
+  font-weight: normal;
+  letter-spacing: 3px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.inform,
+.section_contacts,
+.section_skills,
+.courses_list,
+.projects_list,
+.education p,
+.english p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.section_contacts,
+.courses_list,
+.projects_list,
+.projects_list_link {
+  list-style: none;
+}
+
+.list_one,
+.list_two,
+.list_three,
+.list_four {
+  display: flex;
+  align-items: center;
+}
+
+.list_one::before,
+.list_two::before,
+.list_three::before,
+.list_four::before {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.list_one::before {
+  content: url('./assets/png/3.png');
+}
+
+.list_two::before {
+  content: url('./assets/png/1.png');
+}
+
+.list_three::before {
+  content: url('./assets/png/5.png');
+}
+
+.list_four::before {
+  content: url('./assets/png/4.png');
+}
+
+.section_skills li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.type_skill {
+  margin-top: 0px;
+  margin-bottom: 7px;
+}
+
+.circle_skills {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: var(--pink);
+}
+
+.gray_circle {
+  background-color: var(--lite-gray);
+}
+
+.task {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.courses_list li::before,
+.type_programm_list li::before {
+  color: #d90462;
+  content: '◎';
+  padding-right: 10px;
+}
+
+.courses_list {
+  list-style-position: outside;
+}
+
+.link_project:link,
+.link_project:visited,
+.link_project:active {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.link_project:hover {
+  color: var(--pink);
+}
+
+.projects_j {
+  padding-bottom: 25px;
+}
+
+
+
+
 
 
 
