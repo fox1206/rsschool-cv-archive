@@ -28,3 +28,31 @@ body {
   margin: 0 auto;
   background-color: var(--while);
 }
+
+/* header */
+.nav_list {
+  position: relative;
+  z-index: 10;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_link {
+  padding: 0 20px;
+  line-height: 50px;
+  font-family: var(--fonts1);
+}
+
+.nav_link:link,
+.nav_link:visited,
+.nav_link:active
+{
+  text-decoration: none;
+  color: var(--pink);
+}
+
+.nav_link:hover {
+  transition: 2s;
+  color: var(--dark);
+}
