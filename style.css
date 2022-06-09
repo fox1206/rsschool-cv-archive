@@ -126,6 +126,14 @@ body {
 }
 
 .inform,
+.courses_list,
+.projects_js,
+.projects_j,
+.education p {
+  line-height: 25px;
+}
+
+.inform,
 .section_contacts,
 .section_skills,
 .courses_list,
