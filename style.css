@@ -234,6 +234,53 @@ body {
   padding-bottom: 25px;
 }
 
+/* footer */
+.footer {
+  padding-top: 25px;
+  font-size: 17px;
+  color: var(--gray);
+  font-family: var(--fonts2);
+}
+
+.container_grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.year {
+  position: absolute;
+  z-index: 100;
+  bottom: 4px;
+  right: 30px;
+  color: var(--orange);
+}
+
+.github_footer {
+  position: relative;
+  z-index: 100;
+}
+
+.github_footer img:hover{
+  filter: invert(16%) sepia(20%) saturate(13%) hue-rotate(121deg) brightness(101%) contrast(89%);
+}
+
+.rsschool_footer {
+  position: relative;
+  z-index: 70;
+  filter: invert(16%) sepia(20%) saturate(13%) hue-rotate(121deg) brightness(101%) contrast(89%);
+}
+
+.rsschool_footer img {
+  width: 300px;
+}
+
+
+
 
 
 
