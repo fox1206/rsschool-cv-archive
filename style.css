@@ -1,3 +1,15 @@
 *{
   box-sizing: border-box;
 }
+
+:root {
+  --pink: #d90462;
+  --aqua: #009ca0;
+  --orange: #db9938;
+  --dark: #343434;
+  --gray: #858585;
+  --lite-gray: #c2c2c2;
+  --while: #fff;
+  --fonts1: 'Bebas Neue', cursive;
+  --fonts2: 'Dosis', sans-serif;
+}
