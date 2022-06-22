@@ -1,0 +1,536 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  --pink: #d90462;
+  --aqua: #009ca0;
+  --orange: #db9938;
+  --dark: #343434;
+  --gray: #858585;
+  --lite-gray: #c2c2c2;
+  --while: #fff;
+  --fonts1: 'Bebas Neue', cursive;
+  --fonts2: 'Dosis', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #a4a4a4;
+}
+
+.cv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--while);
+}
+
+/* header */
+.nav_list {
+  position: relative;
+  z-index: 10;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_link {
+  padding: 0 20px;
+  line-height: 50px;
+  font-family: var(--fonts1);
+}
+
+.nav_link:link,
+.nav_link:visited,
+.nav_link:active
+{
+  text-decoration: none;
+  color: var(--pink);
+}
+
+.nav_link:hover {
+  transition: 2s;
+  color: var(--dark);
+}
+
+/* menu - burger */
+.hamburger {
+  position: fixed;
+  display: none;
+  width: 50px;
+  height: 28px;
+  z-index: 80;
+  top: 30px;
+  right: 30px;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--orange);
+  position: absolute;
+  left: 0;
+  transition: all 1s ease-in-out;
+}
+
+.line_one {
+  top: 0;
+}
+
+.line_three {
+  bottom: 0;
+}
+
+.line_two {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line.anim:nth-child(1){
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 1s;
+}
+
+.line.anim:nth-child(3){
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 1s;
+}
+
+.line.return:nth-child(1){
+  transform: translateX(100%);
+}
+
+.line.return:nth-child(3){
+  transform: translateX(-100%);
+}
+
+/* main */
+.main {
+  padding-top: 75px;
+  font-size: 17px;
+  color: var(--gray);
+  font-family: var(--fonts2);
+}
+
+.div_my_info{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.photo {
+  position: relative;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid var(--while)
+}
+
+.info_photo {
+  position: relative;
+  z-index: 5;
+  max-width: 340px;
+  max-height: 340px;
+  min-width: 290px;
+  min-height: 290px;
+  border-radius: 50%;  
+}
+
+.info_name {
+  position: relative;
+  z-index: 60;
+}
+
+.div_title {
+  font-family: var(--fonts1);
+  line-height: 25px;
+  letter-spacing: 3px;
+}
+
+.title_level_one {
+  font-size: 75px;
+  color: var(--dark);
+}
+
+.title_level_two {
+  font-size: 45px;
+  color: var(--pink);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.title_two {
+  font-family: var(--fonts1);
+  color: var(--pink);
+  font-weight: normal;
+  letter-spacing: 3px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.inform,
+.courses_list,
+.projects_js,
+.projects_j,
+.education p {
+  line-height: 25px;
+}
+
+.inform,
+.section_contacts,
+.section_skills,
+.courses_list,
+.projects_list,
+.education p,
+.english p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.section_contacts,
+.courses_list,
+.projects_list,
+.projects_list_link {
+  list-style: none;
+}
+
+.list_one,
+.list_two,
+.list_three,
+.list_four {
+  display: flex;
+  align-items: center;
+}
+
+.list_one::before,
+.list_two::before,
+.list_three::before,
+.list_four::before {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.list_one::before {
+  content: url('./assets/png/3.png');
+}
+
+.list_two::before {
+  content: url('./assets/png/1.png');
+}
+
+.list_three::before {
+  content: url('./assets/png/5.png');
+}
+
+.list_four::before {
+  content: url('./assets/png/4.png');
+}
+
+.section_skills li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.type_skill {
+  margin-top: 0px;
+  margin-bottom: 7px;
+}
+
+.circle_skills {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: var(--pink);
+}
+
+.gray_circle {
+  background-color: var(--lite-gray);
+}
+
+.task {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.courses_list li::before,
+.type_programm_list li::before {
+  color: #d90462;
+  content: '◎';
+  padding-right: 10px;
+}
+
+.courses_list {
+  list-style-position: outside;
+}
+
+.link_project:link,
+.link_project:visited,
+.link_project:active {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.link_project:hover {
+  color: var(--pink);
+}
+
+.projects_j {
+  padding-bottom: 25px;
+}
+
+.english,
+.education p,
+.contacts {
+  position: relative;
+  z-index: 60;
+}
+
+/* footer */
+.footer {
+  padding-top: 25px;
+  font-size: 17px;
+  color: var(--gray);
+  font-family: var(--fonts2);
+}
+
+.container_grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.year {
+  position: absolute;
+  z-index: 100;
+  bottom: 4px;
+  right: 30px;
+  color: var(--orange);
+}
+
+.github_footer {
+  position: relative;
+  z-index: 100;
+}
+
+.github_footer img:hover{
+  filter: invert(16%) sepia(20%) saturate(13%) hue-rotate(121deg) brightness(101%) contrast(89%);
+}
+
+.rsschool_footer {
+  position: relative;
+  z-index: 70;
+  filter: invert(16%) sepia(20%) saturate(13%) hue-rotate(121deg) brightness(101%) contrast(89%);
+}
+
+.rsschool_footer img {
+  width: 300px;
+}
+
+/* circle */
+.pink_circle {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  width: 299px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/png/6.png');
+}   
+
+.blue_circle {
+  position: absolute;
+  z-index: 5;
+  width: 90px;
+  height: 90px;
+  top: 20px;
+  left: 300px;
+  border-radius: 100%;
+  background-color: var(--aqua);
+}
+
+.orange_circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 450px;
+  left: 70px;
+  border-radius: 100%;
+  background-color: var(--orange); 
+}
+
+.circle_blue_footer {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  bottom: 0px;
+  width: 270px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/png/7.png');
+}
+
+/* media */
+@media (max-width: 820px){
+  .title_two,
+  .inform,
+  .section_contacts,
+  .section_skills,
+  .courses_list,
+  .projects_list,
+  .education p,
+  .english p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .title_level_one,
+  .title_level_two{
+    text-align: center;
+  }
+}
+  
+  @media (max-width: 780px) {
+    .nav_list {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-left: 0;
+      padding-top: 10px;
+    }
+
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+
+    .nav{
+      position: fixed;
+      transform: translateY(-100%);
+      z-index: 70;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      transition: 1s all linear;
+    }
+
+    .anim {
+      transform: translateX(0);
+    }    
+  }
+
+  @media (max-width: 768px){
+    .title_two,
+    .inform,
+    .section_contacts,
+    .section_skills,
+    .courses_list,
+    .projects_list,
+    .education p,
+    .english p {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  
+  @media (max-width: 631px) {
+    .rsschool_footer img {
+      width: 140px;
+    }
+  
+    .github_footer img {
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .github_footer a,
+    .rsschool_footer a
+    {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 551px) { 
+    .title_level_one {
+      font-size: 55px;
+    }
+  
+    .title_level_two {
+      font-size: 25px;
+    }
+  }
+  
+  @media (max-width: 451px) {  
+    .title_level_one {
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 400px) {  
+    .blue_circle {
+      left: 250px;
+    }
+
+  .title_two,
+  .inform,
+  .section_contacts,
+  .section_skills,
+  .courses_list,
+  .projects_list,
+  .education p,
+  .english p {
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+
+  .code {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) );
+  }
+
+  .blue_circle {
+    width: 70px;
+    height: 70px;
+    left: 240px;
+  }
+
+  .github_footer,
+  .rsschool_footer {
+    left: -50px;
+    }
+  }
