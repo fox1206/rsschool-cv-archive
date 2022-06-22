@@ -413,6 +413,11 @@ body {
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  .title_level_one,
+  .title_level_two{
+    text-align: center;
+  }
 }
   
   @media (max-width: 780px) {
@@ -442,6 +447,20 @@ body {
     .anim {
       transform: translateX(0);
     }    
+  }
+
+  @media (max-width: 768px){
+    .title_two,
+    .inform,
+    .section_contacts,
+    .section_skills,
+    .courses_list,
+    .projects_list,
+    .education p,
+    .english p {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
   
   @media (max-width: 631px) {
